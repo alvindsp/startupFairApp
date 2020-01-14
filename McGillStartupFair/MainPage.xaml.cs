@@ -16,6 +16,9 @@ namespace McGillStartupFair
         public MainPage()
         {
             InitializeComponent();
+            var assembly = typeof(MainPage);
+            backgroundImage.Source = ImageSource.FromResource("McGillStartupFair.Assets.Images.mcgillBackground.jpg", assembly);
+            logo.Source = ImageSource.FromResource("McGillStartupFair.Assets.Images.dobson2.png", assembly);
         }
     }
 }

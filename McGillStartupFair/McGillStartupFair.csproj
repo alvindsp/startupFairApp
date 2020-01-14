@@ -9,4 +9,20 @@
     <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
     <PackageReference Include="Xamarin.Essentials" Version="1.2.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\Images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\dobson.png" />
+    <None Remove="Assets\Images\mcgill.jpg" />
+    <None Remove="Assets\Images\mcgillBackground.jpg" />
+    <None Remove="Assets\Images\dobson2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\dobson.png" />
+    <EmbeddedResource Include="Assets\Images\mcgill.jpg" />
+    <EmbeddedResource Include="Assets\Images\mcgillBackground.jpg" />
+    <EmbeddedResource Include="Assets\Images\dobson2.png" />
+  </ItemGroup>
 </Project>

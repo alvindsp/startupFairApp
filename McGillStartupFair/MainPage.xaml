@@ -2,6 +2,67 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="McGillStartupFair.MainPage">
     <StackLayout>
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <RelativeLayout>
+           <Image x:Name="backgroundImage"
+             
+                  Aspect="Fill"
+                RelativeLayout.WidthConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint=
+                  "{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+           <Image x:Name="logo"
+                       Aspect="AspectFit"
+            />
+   
+
+            <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <StackLayout>
+            <Button x:Name="EmployersButton"
+                ImageSource=""
+                Text="Employers"
+                TextColor="White"
+                BackgroundColor="Red"
+                Margin="50,80,50,20"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="10"
+                FontAttributes="Bold"
+            />
+             <Button x:Name="InfoButton"
+                Text="Info "
+                TextColor="White"
+                BackgroundColor="Red"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="10"
+                Margin="50,0,50,20"
+                FontAttributes="Bold"
+            />
+
+            <Button x:Name="MapButton"
+                Text="Floor Plan "
+                TextColor="White"
+                BackgroundColor="Red"
+                HorizontalOptions="FillAndExpand"
+                CornerRadius="10"
+                FontAttributes="Bold"
+                Margin="50,0,50,0"
+            />
+
+
+            </StackLayout>
+   
+         
+
+            </Grid>
+     
+        </RelativeLayout>
     </StackLayout>
 </ContentPage>
