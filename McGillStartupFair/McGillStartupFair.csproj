@@ -14,15 +14,17 @@
     <Folder Include="Assets\Images\" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Assets\Images\dobson.png" />
-    <None Remove="Assets\Images\mcgill.jpg" />
-    <None Remove="Assets\Images\mcgillBackground.jpg" />
-    <None Remove="Assets\Images\dobson2.png" />
+    <None Remove="Assets\Images\martlet.png" />
+    <None Remove="Assets\Images\martlet.png" />
+    <None Remove="Assets\Images\background4.jpg" />
+    <None Remove="Assets\Images\logo2.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Assets\Images\dobson.png" />
-    <EmbeddedResource Include="Assets\Images\mcgill.jpg" />
-    <EmbeddedResource Include="Assets\Images\mcgillBackground.jpg" />
-    <EmbeddedResource Include="Assets\Images\dobson2.png" />
+    <EmbeddedResource Include="Assets\Images\martlet.png" />
+    <EmbeddedResource Include="Assets\Images\background4.jpg" />
+    <EmbeddedResource Include="Assets\Images\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="MyPage.xaml.cs" />
   </ItemGroup>
 </Project>

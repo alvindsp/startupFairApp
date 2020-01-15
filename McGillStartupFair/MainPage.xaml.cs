@@ -17,8 +17,17 @@ namespace McGillStartupFair
         {
             InitializeComponent();
             var assembly = typeof(MainPage);
-            backgroundImage.Source = ImageSource.FromResource("McGillStartupFair.Assets.Images.mcgillBackground.jpg", assembly);
-            logo.Source = ImageSource.FromResource("McGillStartupFair.Assets.Images.dobson2.png", assembly);
+            backgroundImage.Source = ImageSource.FromResource("McGillStartupFair.Assets.Images.background4.jpg", assembly);
+            logo.Source = ImageSource.FromResource("McGillStartupFair.Assets.Images.logo2.png", assembly);
+            NavigationPage.SetHasNavigationBar(this, false);
         }
+
+        private void EnterButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new HomePage());
+        }
+
+
+
     }
 }

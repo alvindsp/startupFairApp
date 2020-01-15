@@ -133,7 +133,6 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\info.png" />
-    <BundleResource Include="Resources\info2x.png" />
     <BundleResource Include="Resources\info3x.png" />
   </ItemGroup>
 </Project>
