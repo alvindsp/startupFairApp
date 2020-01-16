@@ -26,5 +26,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="MyPage.xaml.cs" />
+    <Compile Remove="Models\C.cs" />
   </ItemGroup>
 </Project>
